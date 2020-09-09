@@ -3,8 +3,8 @@
 
 Usage> 
 <port 80/tcp>
-python Cisco Adaptive Security Appliance Software 9.11 - Local File Inclusion(CVE-2020-3452).py <IP> 
+python Cisco Adaptive Security Appliance Software 9.11 - Local File Inclusion(CVE-2020-3452).py [IP] 
 
 or 
 
-python Cisco Adaptive Security Appliance Software 9.11 - Local File Inclusion(CVE-2020-3452).py <IP> <Port>
+python Cisco Adaptive Security Appliance Software 9.11 - Local File Inclusion(CVE-2020-3452).py [IP] [Port]
